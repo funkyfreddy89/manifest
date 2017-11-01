@@ -7,16 +7,31 @@
            remote="aosp"
            sync-j="4" />
 
-  <remote  name="github"
+  <remote  name="ia"
            fetch="https://github.com/android-ia/" />
+
+  <remote  name="github"
+          fetch="https://github.com/" />
+
+  <remote  name="x86"
+          fetch="git://git.osdn.net/gitroot/android-x86" />
+
+  <remote name="BlissRoms"
+          fetch="https://github.com/BlissRoms" />
+
+  <remote name="BlissRoms-Devices"
+          fetch="https://github.com/BlissRoms-Devices" />
+
+  <remote name="opengapps"
+          fetch="https://github.com/opengapps/" />
 
   <remote name="kernelorg" fetch="https://git.kernel.org/" />
 
-  <remote  name="graphics"
-           fetch="https://github.com/01org/" />
+  <remote name="graphics"
+          fetch="https://github.com/01org/" />
 
   <include name="include/aosp_vanilla.xml" />
   <include name="include/remove-android_ia.xml" />
-  <include name="include/bsp-android_ia.xml" />
+  <include name="include/bsp-bliss_ia.xml" />
 
 </manifest>
