@@ -21,8 +21,8 @@
   <project name="hardware-intel-kernelflinger" path="hardware/intel/kernelflinger" groups="pdk" remote="ia" revision="master" />
   <project name="external-gnu-efi" path="external/gnu-efi" groups="pdk" remote="ia" revision="master" />
   <project name="device-androidia-mixins" path="device/intel/mixins" remote="ia" revision="master" />
-  <project name="device-androidia" path="device/intel/android_ia" remote="ia" revision="master" />
-  <project name="device-androidia-kernel" path="kernel/android_ia" remote="ia" revision="master" />
+  <!-- <project name="device-androidia" path="device/intel/android_ia" remote="ia" revision="master" /> -->
+  <!-- <project name="device-androidia-kernel" path="kernel/android_ia" remote="ia" revision="master" /> -->
   <project name="device-androidia-sound" path="vendor/intel/external/android_ia/audio" remote="ia" revision="master" />
   <project name="hardware_intel_audio" path="vendor/intel/external/android_ia/audio_pfw/hal" remote="ia" revision="master" />
   <project name="hardware_intel_audiocomms_utilities" path="vendor/intel/external/android_ia/audio_pfw/utilities" remote="ia" revision="master" />
@@ -46,11 +46,13 @@
   <project name="system-bt" path="system/bt" remote="ia" revision="master" />
   <project name="frameworks-base" path="frameworks/base" remote="ia" revision="master" />
   <project name="bootable-recovery" path="bootable/recovery" remote="ia" revision="master" />
-  <project name="bionic" path="bionic" remote="ia" revision="master" />
-  <project name="external-drm_hwcomposer" path="external/drm_hwcomposer" groups="drm_hwcomposer" remote="ia" revision="master"/>
-  <project name="external-drm_gralloc" path="external/drm_gralloc" groups="drm_gralloc" remote="ia" revision="master"/> -->
+  <project name="bionic" path="bionic" remote="ia" revision="master" />-->
 
-  <project path="device/generic/pc_common" name="BlissRoms-x86/device_generic_pc_common" remote="github" revision="o8.0-ia" />
+<!-- BLISS -->
+
+  <project path="kernel/android_ia" name="BlissRoms-x86/kernel_common" remote="github" revision="kernel-4.9-ax86-b" />
+  <!-- <project path="device/generic/pc_common" name="BlissRoms-x86/device_generic_pc_common" remote="github" revision="o8.0-ia" /> -->
+  <project name="BlissRoms-x86/device-androidia" path="device/intel/android_ia" remote="github" revision="o8.0-x86" />
   <project path="device/generic/pc_x86" name="BlissRoms-x86/device_generic_pc_x86" remote="github" revision="oreo-x86" />
   <project path="device/generic/pc_x86_64" name="BlissRoms-x86/device_generic_pc_x86_64" remote="github" revision="oreo-x86" />
   <project path="device/generic/firmware" name="BlissRoms-x86/device_generic_firmware" remote="github" revision="n7.1-x86-torvalds" />
@@ -60,7 +62,7 @@
   <project path="bootable/newinstaller" name="BlissRoms-x86/bootable_newinstaller" remote="github" revision="o8.0-x86" />
   <project path="frameworks/av" name="BlissRoms-x86/platform_frameworks_av" remote="github" revision="o8.0-x86" />
   <project path="frameworks/base" name="platform_frameworks_base" remote="BlissRoms" revision="o8.0" />
-  <project path="frameworks/native" name="BlissRoms-x86/frameworks_native" remote="github" revision="o8.0-ia" />
+  <project path="frameworks/native" name="BlissRoms-x86/frameworks_native" remote="github" revision="0-ia" />
   <project path="frameworks/support" name="platform_frameworks_support" remote="BlissRoms" revision="o8.0" />
   <project path="packages/apps/Settings" name="BlissRoms-x86/packages_apps_Settings" remote="github" revision="o8.0-x86" />
 
@@ -79,19 +81,24 @@
 
   <!-- Androis-x86 Project -->
 
+  <!-- <project path="external/libdrm" name="platform/external/libdrm" groups="pdk" /> -->
   <!-- <project path="external/libdrm" name="external-libdrm" groups="pdk" remote="x86" revision="oreo-x86" /> -->
   <!-- <project path="external/libdrm" name="intel/external-libdrm" groups="pdk" remote="github" revision="master" /> -->
   <project path="external/llvm" name="external-llvm" remote="x86" revision="oreo-x86" />
-  <project path="external/gbm_gralloc" name="platform/external/gbm_gralloc" remote="x86" revision="oreo-x86" />
+  <!-- <project path="external/gbm_gralloc" name="platform/external/gbm_gralloc" remote="x86" revision="oreo-x86" /> -->
   <!-- <project path="external/swiftshader" name="platform/external/swiftshader" remote="x86" revision="oreo-x86" /> -->
 
-  <!-- <project path="external/libdrm" name="maurossi/external-libdrm" groups="pdk" remote="github" revision="2.4.85_intel" />
-  <project path="external/drm_gralloc" name="platform/external/drm_gralloc" remote="x86" revision="oreo-x86" />
-  <project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" remote="x86" revision="oreo-x86" /> -->
+  <!-- <project name="external-drm_hwcomposer" path="external/drm_hwcomposer" groups="drm_hwcomposer" remote="ia" revision="master"/>
+  <project name="external-drm_gralloc" path="external/drm_gralloc" groups="drm_gralloc" remote="ia" revision="master"/> -->
 
-  <project path="external/drm_gralloc" name="platform/external/drm_gralloc" groups="drm_gralloc,pdk-fs" />
-  <project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" groups="drm_hwcomposer,pdk-fs" />
-  <project path="external/libdrm" name="platform/external/libdrm" groups="pdk" />
+  <!-- <project path="external/libdrm" name="maurossi/external-libdrm" groups="pdk" remote="github" revision="2.4.85_intel" />-->
+  <!-- <project path="external/drm_gralloc" name="BlissRoms-x86/drm_gralloc" remote="github" revision="o8.0-x86-ia" /> -->
+
+  <!--<project path="external/drm_gralloc" name="platform/external/drm_gralloc" remote="x86" revision="oreo-x86" /> -->
+  <!-- <project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" remote="x86" revision="oreo-x86" />-->
+
+  <!-- <project path="external/drm_gralloc" name="platform/external/drm_gralloc" groups="drm_gralloc,pdk-fs" /> -->
+  <!-- <project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" groups="drm_hwcomposer,pdk-fs" /> -->
 
   <!-- BEGIN OPENGAPPS-X86 -->
 
@@ -106,7 +113,7 @@
 
   <!-- BEGIN SUPERSU -->
 
-  <project path="vendor/supersu" name="BlissRoms-x86/vendor-supersu" remote="github" revision="nougat" />
+  <!--<project path="vendor/supersu" name="BlissRoms-x86/vendor-supersu" remote="github" revision="nougat" /> -->
 
   <!-- END SUPERSU -->
 
