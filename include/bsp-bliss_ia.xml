@@ -59,7 +59,7 @@
   <project path="device/generic/blissemu" name="BlissRoms-x86/blissemu" remote="github" revision="o8.0" />
 
   <project path="kernel/pc_common" name="BlissRoms-x86/kernel_common" remote="github" revision="kernel-4.9-ax86" />
-  <project path="bootable/newinstaller" name="BlissRoms-x86/bootable_newinstaller" remote="github" revision="o8.0-x86" />
+  <project path="bootable/newinstaller" name="BlissRoms-x86/bootable_newinstaller" remote="github" revision="o8.0-ia-test" />
   <project path="frameworks/av" name="BlissRoms-x86/platform_frameworks_av" remote="github" revision="o8.0-x86" />
   <project path="frameworks/base" name="platform_frameworks_base" remote="BlissRoms" revision="o8.0" />
   <project path="frameworks/native" name="BlissRoms-x86/frameworks_native" remote="github" revision="0-ia" />
