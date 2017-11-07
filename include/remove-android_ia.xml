@@ -25,5 +25,5 @@
   <remove-project name="platform/external/libopus" />
   <remove-project name="platform/hardware/interfaces" />
   <remove-project name="platform/packages/providers/MediaProvider" />
-
+  <remove-project name="platform/external/swiftshader" />
 </manifest>
