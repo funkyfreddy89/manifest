@@ -89,7 +89,8 @@
   <project path="external/llvm" name="external-llvm" remote="x86" revision="oreo-x86" />
   <!-- <project path="external/gbm_gralloc" name="platform/external/gbm_gralloc" remote="x86" revision="oreo-x86" /> -->
   <project path="external/swiftshader" name="platform/external/swiftshader" remote="x86" revision="oreo-x86" /> 
-
+  <project path="external/elfutils" name="platform_external_elfutils" remote="BlissRoms" revision="o8.0" />
+  
   <!-- <project name="external-drm_hwcomposer" path="external/drm_hwcomposer" groups="drm_hwcomposer" remote="ia" revision="master"/>
   <project name="external-drm_gralloc" path="external/drm_gralloc" groups="drm_gralloc" remote="ia" revision="master"/> -->
 
