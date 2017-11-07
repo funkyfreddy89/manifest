@@ -77,6 +77,8 @@
   <project path="art" name="BlissRoms-x86/platform_art" remote="github" revision="o8.0" />
   <!-- <project path="bionic" name="BlissRoms-x86/platform_bionic" remote="github" revision="o8.0" /> -->
 
+  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" remote="BlissRoms" revision="o8.0" />
+
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" groups="pdk,linux" revision="master" clone-depth="1" />
 
   <!-- Androis-x86 Project -->
