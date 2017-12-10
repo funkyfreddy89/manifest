@@ -87,15 +87,6 @@
 
 <!-- END ANDROID-X86 -->
 
-<!-- BEGIN electrikjesus OPENGAPPS-X86 -->
-	
-  <project path="vendor/google/build" name="electrikjesus/aosp_build" revision="master" remote="github" />
-  <project path="vendor/opengapps/sources/all" name="electrikjesus/all" clone-depth="1" revision="mm6.0" remote="github" />
-  <project path="vendor/opengapps/sources/x86" name="electrikjesus/x86" clone-depth="1" revision="mm6.0" remote="github" />
-  <project path="vendor/opengapps/sources/x86_64" name="electrikjesus/x86_64" clone-depth="1" revision="mm6.0" remote="github" />
-
-<!-- END OPENGAPPS-X86 -->
-
 <!-- from Bliss-x86 repository -->
 
   <project path="build" name="build" remote="BR-x86" revision="mm6.0" >
